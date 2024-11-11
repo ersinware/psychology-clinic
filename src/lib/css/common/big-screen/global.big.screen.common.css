@@ -1,0 +1,131 @@
+@media (min-width: 65.001em) {
+    body {
+        --main-h-padding: 2rem;
+        --main-v-padding: 2.5rem;
+        --page-v-padding: calc(var(--main-v-padding) * 2.5);
+    }
+
+    .for-small-screen {
+        display: none !important;
+    }
+
+    .section-texts-wrapper {
+        margin-bottom: var(--main-v-padding);
+    }
+
+    .big-screen-b-box {
+        box-sizing: border-box;
+    }
+
+    .big-screen-grid {
+        display: grid;
+    }
+
+    .big-screen-flex {
+        display: flex;
+    }
+
+    .big-screen-f-column {
+        flex-direction: column;
+    }
+
+    .big-screen-f-row-reverse {
+        flex-direction: row-reverse;
+    }
+
+    .big-screen-j-c-c {
+        justify-content: center;
+    }
+
+    .big-screen-a-i-c {
+        align-items: center;
+    }
+
+    .big-screen-f-s-b {
+        justify-content: space-between;
+    }
+
+    .big-screen-f-s-e {
+        justify-content: space-evenly;
+    }
+
+    .big-screen-g-v-d {
+        gap: var(--main-v-padding);
+    }
+
+    .big-screen-page-gap {
+        gap: var(--page-v-padding);
+    }
+
+    .big-screen-g-h-d {
+        gap: var(--main-h-padding);
+    }
+
+    .big-screen-g-2 {
+        gap: 2rem;
+    }
+
+    .big-screen-g-2dot5 {
+        gap: 2.5rem;
+    }
+
+    .big-screen-g-4 {
+        gap: 4rem;
+    }
+
+    .big-screen-w-100 {
+        width: 100%;
+    }
+
+    .big-screen-max-w-page {
+        max-width: var(--max-w-page);
+    }
+
+    .big-screen-h-100vh {
+        height: 100vh;
+    }
+
+    .big-screen-min-h-100vh {
+        min-height: var(--actual-vh);
+    }
+
+    .big-screen-m-h-auto {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .big-screen-page-p-b {
+        padding-bottom: var(--page-v-padding);
+    }
+
+    .big-screen-page-p-v-d {
+        padding-block: var(--page-v-padding);
+    }
+
+    .big-screen-p-d,
+    .big-screen-p-v-d {
+        padding-block: var(--main-v-padding);
+    }
+
+    .big-screen-p-d,
+    .big-screen-p-b-v-d {
+        padding-bottom: var(--main-v-padding);
+    }
+
+    .big-screen-p-d {
+        padding-top: var(--main-v-padding);
+        padding-left: var(--main-h-padding);
+        padding-right: var(--main-h-padding);
+    }
+
+    .big-screen-o-y-scroll {
+        overflow-y: scroll;
+    }
+
+    .big-screen-max-four-lines {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 4;
+        line-clamp: 4;
+    }
+}

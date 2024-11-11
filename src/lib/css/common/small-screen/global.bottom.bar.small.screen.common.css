@@ -1,0 +1,75 @@
+@media (max-width: 65em) {
+    body {
+        --bottom-bar-icon-width: 1.75rem;
+        --bottom-bar-icon-height: 1.5rem;
+
+        --bottom-bar-height: 6rem;
+    }
+
+    .bottom-bar-wrapper {
+        z-index: 102 !important;
+        background-color: white;
+    }
+
+    .bottom-bar {
+        height: var(--bottom-bar-height);
+        background-color: var(--bottom-bar-background-color);
+    }
+
+    .bottom-bar-item-wrapper {
+        width: 3.5rem;
+    }
+
+    .bottom-bar-icon {
+        width: var(--bottom-bar-icon-width);
+        height: var(--bottom-bar-icon-height);
+
+        fill: var(--bottom-bar-icon-color);
+
+        transition: fill 0.5s ease-in-out;
+    }
+
+    .bottom-bar-text {
+        line-height: 1rem;
+
+        color: var(--bottom-bar-text-color);
+
+        font-size: 0.8rem;
+        letter-spacing: .025rem;
+
+        transition: color 0.5s ease-in-out;
+    }
+
+    .active-bottom-bar-item-wrapper .bottom-bar-icon {
+        fill: var(--bottom-bar-active-icon-color);
+    }
+
+    .active-bottom-bar-item-wrapper .bottom-bar-text {
+        color: var(--bottom-bar-active-text-color);
+    }
+
+    @media (min-width: 27.25em) {
+        .bottom-bar-soft-borders {
+            border-top-left-radius: var(--border-radius);
+            border-top-right-radius: var(--border-radius);
+        }
+    }
+
+    @media (hover: hover) {
+        .bottom-bar-item-wrapper:hover .bottom-bar-icon {
+            fill: var(--bottom-bar-active-icon-color);
+        }
+
+        .bottom-bar-item-wrapper:hover .bottom-bar-text {
+            color: var(--bottom-bar-active-text-color);
+        }
+
+        .active-bottom-bar-item-wrapper:hover .bottom-bar-icon {
+            fill: var(--bottom-bar-active-icon-color-darker);
+        }
+
+        .active-bottom-bar-item-wrapper:hover .bottom-bar-text {
+            color: var(--bottom-bar-active-text-color-darker);
+        }
+    }
+}

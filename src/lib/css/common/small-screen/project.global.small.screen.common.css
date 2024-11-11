@@ -1,0 +1,54 @@
+@media (max-width: 65em) {
+    .article-p-d {
+        padding-block: calc(var(--main-v-padding) * 1.5);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        line-height: 3rem;
+        letter-spacing: .05rem;
+    }
+
+    .smaller-section-title {
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+        letter-spacing: .05rem;
+    }
+
+    .small-section-title {
+        font-size: 1.75rem;
+        line-height: 2.25rem;
+        letter-spacing: .05rem;
+    }
+
+    .button {
+        padding: .35rem 2rem;
+    }
+
+    .button,
+    .nude-button {
+        font-size: .775rem;
+    }
+
+    .small-button {
+        font-size: 0.725rem;
+    }
+
+    .smaller-button {
+        font-size: 0.7rem;
+    }
+
+    .fab-icon {
+        fill: var(--fab-icon-color);
+    }
+
+    .small-screen-p-b-for-bottom-bar-for-page {
+        padding-bottom: calc(var(--bottom-bar-height) + var(--page-v-padding));
+    }
+
+    .small-screen-p-b-for-bottom-bar-with-f-a-b-for-page {
+        --fab-bottom: calc(var(--bottom-bar-height) + var(--main-v-padding) + var(--fab-height));
+        --normal-bottom: calc(var(--bottom-bar-height) + var(--page-v-padding));
+        padding-bottom: calc(var(--fab-bottom) - var(--normal-bottom) + var(--main-v-padding));
+    }
+}

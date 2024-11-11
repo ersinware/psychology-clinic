@@ -1,0 +1,49 @@
+@media (min-width: 65.001em) {
+    body {
+        --header-height: 5.5rem;
+    }
+
+    .article-p-d {
+        padding-block: calc(var(--main-v-padding) * 1.25);
+    }
+
+    .wrapper-with-left-menu {
+        padding-left: calc(var(--left-menu-width) + var(--main-h-padding) * 2);
+        padding-right: var(--main-h-padding);
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+        line-height: 3.25rem;
+        letter-spacing: .05rem;
+    }
+
+    .smaller-section-title {
+        font-size: 2.25rem;
+        line-height: 2.75rem;
+        letter-spacing: .05rem;
+    }
+
+    .small-section-title {
+        font-size: 1.75rem;
+        line-height: 2.5rem;
+        letter-spacing: .05rem;
+    }
+
+    .button {
+        padding: .35rem 2rem .325rem;
+    }
+
+    .button,
+    .nude-button {
+        font-size: 0.775rem;
+    }
+
+    .small-button {
+        font-size: 0.725rem;
+    }
+
+    .smaller-button {
+        font-size: 0.7rem;
+    }
+}
